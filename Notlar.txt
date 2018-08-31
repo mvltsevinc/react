@@ -1,0 +1,53 @@
+React componentlerin falan oluþturulmasý ve JSX kodunun parse edilmesi için eklenir.
+React DOM ise bu oluþturulan componentlerin real DOM a render edilmesine yarar.
+Babel preprocessor ise yazdýðým next generation javascript kodunu tüm browserlarýn anlayacaðý hale getirir.
+
+React componenti aslýnda bir javascript functionýdýr.Sadece return deðeri olarak DOM a render edeceðin kodu döner.
+
+Return den sonra parantez açýp kapatmasýnýn nedeni birden fazla satýr kod yazmak için.
+
+ReactDOM nesnesinin render metodu Javascript functionýný DOM component olarak render etmeye yarar.
+
+ReactDOM.render(<Person />,document.querySelector('#p1')); burada bu person <> içinde gönderilince React otomatik olarak fonksiyona bir parametre yollar bu parametre (biz props diye isimlendirdik) bizim componentimizin tüm attributelerini içerir.
+
+{} süslü parantezler dynamic content için kullanýlýr.
+
+JSX kodunda sadece bir root element element kullanabilirsin.
+
+Module 2
+---------------------------
+
+Bir dizideki belli bir elemanlarý deðiþkenlere atamak için destructuring i kullanabilirsin.
+
+
+Module 3
+---------------------------------
+
+package.json içerisinde projemizin dependencies bilgisi tutuluyor.
+package.json-lock da ise bu dependencieslerin versiyonlarý locklanýyor.
+
+node_modules klasörü projemizdeki tüm dependenciesleri tutuyor.
+public klasörü ise en sonda servera vereceðimiz dosyalarý içerir.
+
+manifest.json uygulama için meta data tanýmlamalarýný barýndýran dosyadýr.
+
+JSX kodunun içindeki bir stringde onun text yerine javascript kodu olarak algýlanmasýný istiyorsan orayý {} içine al.
+
+props componentimize gönderilen tüm attributleri içeren bir objedir.
+
+state propertysi component den extend edilmiþ class componentlerde vardýr. function componentlerde yoktur.
+
+state içerden yönetilir deðiþtirilir props ise dýþarýdan
+
+state property sinde olan her bir deðiþiklik için React DOM u rerender eder.
+
+Eðer yazdýðýn fonksiyonu ES6 ile yazarsan yani arrow function þeklinde yazarsan fonksiyon içerisinde yazmýþ olduðun this keywordü class iþaret eder.Yani class içersindeki propertylere falan 
+
+Sadece state ve props da yaptýðýn deðiþikliklerde react DOM u re-render eder.
+
+Þu pattern i aklýnda tut : Dinleme iþlemini componentte yani person.js de dinledikten sonra yapacaðýn iþlemi App.js de yap.
+
+
+
+
+ 
