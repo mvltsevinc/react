@@ -8,8 +8,8 @@
 }
 
 
-/* @media (min-width: 500px) {
+@media (min-width: 500px) {  /*Ekran boyutu 500px den buyukse personun genisligi daima 450px de sabit kalsin.*/
     .Person {
         width: 450px;
     }
-} */
+}
