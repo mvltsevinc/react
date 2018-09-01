@@ -47,6 +47,8 @@ Sadece state ve props da yaptýðýn deðiþikliklerde react DOM u re-render eder.
 
 Þu pattern i aklýnda tut : Dinleme iþlemini componentte yani person.js de dinledikten sonra yapacaðýn iþlemi App.js de yap.
 
+radium packagei :hover gibi pseudo selector larý javascript kodunda kullanman için eklenen 3 party kütüphane
+
 
 
 
