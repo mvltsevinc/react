@@ -49,6 +49,21 @@ Sadece state ve props da yaptýðýn deðiþikliklerde react DOM u re-render eder.
 
 radium packagei :hover gibi pseudo selector larý javascript kodunda kullanman için eklenen 3 party kütüphane
 
+Bölüm 7 
+------------------------------
+
+Çok sayýda props alan bir componentinin oldugunu dusun yani props icinde , eðer bu propsun icindeki
+proplardan sadece 1 tanesi degistiginde componenti rerender edeceksen shouldComponentUpdate 'e 
+bir kosul koyarsýn þöyle mesala 
+return nextProps.persons !== this.props.persons; 
+yenisi eskisinden farklýysa true yani rerender eder farklý degilse false olur rerender etmez (DERS 87)
+
+prop-types package ý prop u alýrken icindekilerin tiplerini kontrol etmek icin kullanýlan bir package (DERS 99)
+
+Scroll un yerini alýp sayfa tekrar yukleninca ayný yere getirme (DERS 104 4:30)
+
+bir ccs sýnýfýnýn sadece kendi componenti özel olmasý için css module kullanýlýr.(DERS111)
+
 
 
 
