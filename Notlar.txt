@@ -64,6 +64,8 @@ Scroll un yerini alýp sayfa tekrar yukleninca ayný yere getirme (DERS 104 4:30)
 
 bir ccs sýnýfýnýn sadece kendi componenti özel olmasý için css module kullanýlýr.(DERS111)
 
+key property sini dizi loop þeklinde component döneceðimiz zaman react ýn her componenti birbirinden ayýrmasý için zorunlu olarak gerekli
+
 
 
 
