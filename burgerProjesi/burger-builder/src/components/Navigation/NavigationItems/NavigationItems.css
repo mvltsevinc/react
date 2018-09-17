@@ -1,0 +1,8 @@
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /* List ıtemları next to each other yapmak için*/
+  align-items: center;
+  height: 100%;
+}
