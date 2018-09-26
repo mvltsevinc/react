@@ -1,0 +1,2 @@
+http request ler için yani ajax çağrıları için package ekledik.
+npm install axios --save
