@@ -4,12 +4,14 @@ import Aux from "../../../hoc/Auxs/Aux";
 import Backdrop from "../Backdrop/Backdrop";
 
 class Modal extends Component {
-
-  shouldComponentUpdate(nextProps,nextState){
-    return nextProps.show !== this.props.show; // Modal ekranda gorünüyorken update yapsın yoksa gerek yok yapmasına
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      nextProps.show !== this.props.show ||
+      nextProps.children !== this.props.children
+    ); // Modal ekranda gorünüyorken update yapsın yoksa gerek yok yapmasına
   }
 
-  componentWillUpdate(){
+  componentWillUpdate() {
     console.log("[Modal] WillUpdate");
   }
 

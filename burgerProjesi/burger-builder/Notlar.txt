@@ -1,0 +1,75 @@
+React componentlerin falan olu�turulmas� ve JSX kodunun parse edilmesi i�in eklenir.
+React DOM ise bu olu�turulan componentlerin real DOM a render edilmesine yarar.
+Babel preprocessor ise yazd���m next generation javascript kodunu t�m browserlar�n anlayaca�� hale getirir.
+
+React componenti asl�nda bir javascript function�d�r.Sadece return de�eri olarak DOM a render edece�in kodu d�ner.
+
+Return den sonra parantez a��p kapatmas�n�n nedeni birden fazla sat�r kod yazmak i�in.
+
+ReactDOM nesnesinin render metodu Javascript function�n� DOM component olarak render etmeye yarar.
+
+ReactDOM.render(<Person />,document.querySelector('#p1')); burada bu person <> i�inde g�nderilince React otomatik olarak fonksiyona bir parametre yollar bu parametre (biz props diye isimlendirdik) bizim componentimizin t�m attributelerini i�erir.
+
+{} s�sl� parantezler dynamic content i�in kullan�l�r.
+
+JSX kodunda sadece bir root element element kullanabilirsin.
+
+Module 2
+---------------------------
+
+Bir dizideki belli bir elemanlar� de�i�kenlere atamak i�in destructuring i kullanabilirsin.
+
+
+Module 3
+---------------------------------
+
+package.json i�erisinde projemizin dependencies bilgisi tutuluyor.
+package.json-lock da ise bu dependencieslerin versiyonlar� locklan�yor.
+
+node_modules klas�r� projemizdeki t�m dependenciesleri tutuyor.
+public klas�r� ise en sonda servera verece�imiz dosyalar� i�erir.
+
+manifest.json uygulama i�in meta data tan�mlamalar�n� bar�nd�ran dosyad�r.
+
+JSX kodunun i�indeki bir stringde onun text yerine javascript kodu olarak alg�lanmas�n� istiyorsan oray� {} i�ine al.
+
+props componentimize g�nderilen t�m attributleri i�eren bir objedir.
+
+state propertysi component den extend edilmi� class componentlerde vard�r. function componentlerde yoktur.
+
+state i�erden y�netilir de�i�tirilir props ise d��ar�dan
+
+state property sinde olan her bir de�i�iklik i�in React DOM u rerender eder.
+
+E�er yazd���n fonksiyonu ES6 ile yazarsan yani arrow function �eklinde yazarsan fonksiyon i�erisinde yazm�� oldu�un this keyword� class i�aret eder.Yani class i�ersindeki propertylere falan 
+
+Sadece state ve props da yapt���n de�i�ikliklerde react DOM u re-render eder.
+
+�u pattern i akl�nda tut : Dinleme i�lemini componentte yani person.js de dinledikten sonra yapaca��n i�lemi App.js de yap.
+
+radium packagei :hover gibi pseudo selector lar� javascript kodunda kullanman i�in eklenen 3 party k�t�phane
+
+B�l�m 7 
+------------------------------
+
+�ok say�da props alan bir componentinin oldugunu dusun yani props icinde , e�er bu propsun icindeki
+proplardan sadece 1 tanesi degistiginde componenti rerender edeceksen shouldComponentUpdate 'e 
+bir kosul koyars�n ��yle mesala 
+return nextProps.persons !== this.props.persons; 
+yenisi eskisinden farkl�ysa true yani rerender eder farkl� degilse false olur rerender etmez (DERS 87)
+
+prop-types package � prop u al�rken icindekilerin tiplerini kontrol etmek icin kullan�lan bir package (DERS 99)
+
+Scroll un yerini al�p sayfa tekrar yukleninca ayn� yere getirme (DERS 104 4:30)
+
+bir ccs s�n�f�n�n sadece kendi componenti �zel olmas� i�in css module kullan�l�r.(DERS111)
+
+key property sini dizi loop �eklinde component d�nece�imiz zaman react �n her componenti birbirinden ay�rmas� i�in zorunlu olarak gerekli
+
+http requestler için package yukledik.Zaten bunun için ayrı bir uygulama yapmıştık.
+npm install --save axios
+
+
+
+
+ 
