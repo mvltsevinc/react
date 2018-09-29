@@ -1,2 +1,6 @@
 http request ler için yani ajax çağrıları için package ekledik.
 npm install axios --save
+
+withRouter componenti router a ait prop ları alt componentlere geçirmek orada kullanmak icin kullanılır.
+
+Link yerine NavLink kullandık. Çünkü hangi sayfada oldugumuzu css ile altına çizgi falan çizeceğiz. Style kullanmak icin class falan
