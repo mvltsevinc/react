@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-import { Route, NavLink } from "react-router-dom";
+import { Route, NavLink, Switch, Redirect } from "react-router-dom";
 import "./Blog.css";
 //import axios from "axios";
 import Posts from "./Posts/Posts";
 import NewPost from "./NewPost/NewPost";
-import FullPost from "./FullPost/FullPost";
 
 class Blog extends Component {
+  state={
+    auth :false
+  }
+
   render() {
     return (
       <div className="Blog">
@@ -15,7 +18,7 @@ class Blog extends Component {
             <ul>
               <li>
                 <NavLink
-                  to="/"
+                  to="/posts/"
                   exact
                   activeClassName="active"
                   activeStyle={{
@@ -23,7 +26,7 @@ class Blog extends Component {
                     textDecoration: "underline"
                   }}
                 >
-                  Home
+                  Posts
                 </NavLink>
               </li>
               <li>
@@ -42,9 +45,14 @@ class Blog extends Component {
         </header>
         {/*<Route path="/" exact render={() => <h1>Hello</h1>} />
         <Route path="/"  render={() => <h1>Hello2</h1>} />*/}
-        <Route path="/" exact component={Posts} /> {/* "/" route olunca posts componentini render et*/}
-        <Route path="/new-post" component={NewPost} />
-        <Route path="/:id" exact component={FullPost} />
+
+        <Switch>
+          {this.state.auth ? <Route path="/new-post" component={NewPost} /> : null }
+          <Route path="/posts/" component={Posts} />
+          <Redirect from="/" to="/posts"/>
+          {/*<Route path="/" component={Posts} />*/}
+          {/* "/" route olunca posts componentini render et*/}
+        </Switch>
       </div>
     );
   }
